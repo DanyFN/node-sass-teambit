@@ -1,0 +1,76 @@
+// Variabili Sito
+$colore_testo_sito: #58402C;
+
+// Regole Generali
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    width: 85%;
+    margin: 0 auto;
+    color: $colore_testo_sito;
+}
+
+// Header
+header {
+
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid $colore_testo_sito;
+    .nav_left {
+        height: 40px;
+        img {
+            margin-left: 10px;
+            height: 100%;
+        }
+    }
+    li {
+        display: inline-block;
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+            a {
+                padding: 10px 20px;
+                background-color: #5B70AA;
+                border-radius: 4px;
+                color: #2C4792;
+            }
+        }
+        a {
+            color: $colore_testo_sito;
+            text-decoration: none;
+        }
+    }
+}
+
+.jumbotron {
+    display: flex;
+    justify-content: space-between;
+    .box {
+        width: 50%;
+        padding: 50px 0;
+        h2 {
+            font-size: 65px;
+            margin: 50px 0;
+            line-height: 85px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+}
